@@ -100,8 +100,3 @@ function triggerGlitch() {
     document.body.innerHTML = '<h1 style="text-align:center;margin-top:20%;font-size:3rem;">█ █ █ █ █ █ █ █ █ █</h1>';
   }, 5000);
 }
-
-
-
-
-
