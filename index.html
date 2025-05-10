@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloxyBox OS</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    @font-face {
+      font-family: 'Minecraftia';
+      src: url('fonts/minecraftia.ttf') format('truetype');
+    }
+  </style>
+</head>
+<body>
+  <!-- Фоновая музыка -->
+  <audio id="bg-music" src="media/background-music.mp3" loop></audio>
+
+  <!-- Boot screen -->
+  <div id="boot-screen">
+    <h1>BloxyBox™ Bootloader</h1>
+    <p>loading virtual carrots...</p>
+    <p>rendering invisible cows...</p>
+    <p>oops.</p>
+  </div>
+
+  <!-- Desktop -->
+  <div id="desktop" class="hidden">
+    <div class="taskbar">BloxyOS v0.0001</div>
+    <div class="icons">
+      <button onclick="openApp('paint')">🖌 Paint</button>
+      <button onclick="openApp('music')">🎵 Music</button>
+      <button onclick="openApp('delete')">🗑 Delete</button>
+    </div>
+    <div id="app-window" class="window hidden">
+      <div id="app-content"></div>
+      <button onclick="closeApp()">❌</button>
+    </div>
+  </div>
+
+  <!-- Плейеры для музыки -->
+  <audio id="rickroll" src="media/rickroll.mp3"></audio>
+  <audio id="gangnam" src="media/gangnam.mp3"></audio>
+  <audio id="vatsok" src="media/vatsok.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
